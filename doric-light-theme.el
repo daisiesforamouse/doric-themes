@@ -68,12 +68,20 @@
       (fg-magenta "#c4a7e7")
       (fg-cyan "#ea9a97")
 
-      (bg-red "#f7c5d3")
-      (bg-green "#afd4e3")
-      (bg-yellow "#fbe6c9")
-      (bg-blue "#d7ecef")
-      (bg-magenta "#e7dcf5")
-      (bg-cyan "#f7d7d5"))
+      (bg-red "#eb6f92")
+      (bg-green "#3e8fb0")
+      (bg-yellow "#f6c177")
+      (bg-blue "#9ccfd8")
+      (bg-magenta "#c4a7e7")
+      (bg-cyan "#ea9a97"))
+
+      ;; lighter variant
+      ;; (bg-red "#f7c5d3")
+      ;; (bg-green "#afd4e3")
+      ;; (bg-yellow "#fbe6c9")
+      ;; (bg-blue "#d7ecef")
+      ;; (bg-magenta "#e7dcf5")
+      ;; (bg-cyan "#f7d7d5"))
 
   "Palette of `doric-light' theme.")
 
