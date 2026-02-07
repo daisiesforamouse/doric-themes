@@ -1663,17 +1663,17 @@ default to a generic text that mentions the BACKGROUND-MODE."
               '(markup-replacement-face ((t :inherit fixed-pitch)))
 
               `(mode-line
-                ((default :background ,bg-shadow-intense :foreground ,fg-shadow-intense)
-                 (((supports :box t))
-                  :box ,border)
-                 (t :underline nil)))
-
-              `(mode-line-active ((t :inherit mode-line)))
-              `(mode-line-inactive
                 ((default :background ,bg-shadow-subtle :foreground ,fg-shadow-subtle)
                  (((supports :box t))
                   :box ,border)
-                 (t :underline ,nil)))
+                 (t :underline ,border)))
+
+              `(mode-line-active ((t :inherit mode-line)))
+              `(mode-line-inactive
+                ((default :background ,bg-main :foreground ,fg-shadow-subtle)
+                 (((supports :box t))
+                  :box ,border)
+                 (t :underline ,border)))
 
               `(notmuch-message-summary-face
                 ((default :background ,bg-shadow-subtle)
