@@ -73,7 +73,7 @@
       (bg-yellow "#ea9d34")
       (bg-blue "#56949f")
       (bg-magenta "#d7827e")
-      (bg-cyan "#d7827e")
+      (bg-cyan "#d7827e"))
 
       ;; lighter variant
       ;; (bg-red "#f7c5d3")
