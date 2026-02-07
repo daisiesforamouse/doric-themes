@@ -1663,14 +1663,14 @@ default to a generic text that mentions the BACKGROUND-MODE."
               '(markup-replacement-face ((t :inherit fixed-pitch)))
 
               `(mode-line
-                ((default :background ,bg-shadow-subtle :foreground ,fg-shadow-subtle)
+                ((default :background ,bg-main :foreground ,fg-main)
                  (((supports :box t))
                   :box ,border)
                  (t :underline ,border)))
 
               `(mode-line-active ((t :inherit mode-line)))
               `(mode-line-inactive
-                ((default :background ,bg-main :foreground ,fg-shadow-subtle)
+                ((default :background ,bg-main :foreground ,fg-accent)
                  (((supports :box t))
                   :box ,border)
                  (t :underline ,border)))

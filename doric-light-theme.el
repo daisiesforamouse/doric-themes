@@ -75,12 +75,6 @@
       (bg-magenta "#e7dcf5")
       (bg-cyan "#f7d7d5"))
 
-      ;; (bg-red "#fadbe4")
-      ;; (bg-green "#cde4ed")
-      ;; (bg-yellow "#fae6cc")
-      ;; (bg-blue "#d4e5e8")
-      ;; (bg-magenta "#e3dee9")
-      ;; (bg-cyan "#f5e0df"))
   "Palette of `doric-light' theme.")
 
   (doric-themes-define-theme doric-light light "Minimalist theme with light background and cool hues"))
