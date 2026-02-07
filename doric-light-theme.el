@@ -42,19 +42,19 @@
     (require 'doric-themes))
 
   (defvar doric-light-palette
-    '((cursor "#2266bb")
+    '((cursor "#000000")
       (bg-main "#ffffff")
       (fg-main "#000000")
       (border "#b0b0b0")
 
-      (bg-shadow-subtle "#efeff2")
-      (fg-shadow-subtle "#5a6268")
+      (bg-shadow-subtle "#f0f0f0")
+      (fg-shadow-subtle "#606060")
 
-      (bg-neutral "#dbdce1")
-      (fg-neutral "#424d53")
+      (bg-neutral "#e0e0e0")
+      (fg-neutral "#505050")
 
-      (bg-shadow-intense "#a0bcd0")
-      (fg-shadow-intense "#213067")
+      (bg-shadow-intense "#b0b0b0")
+      (fg-shadow-intense "#606060")
 
       (bg-accent "#d8f1f3")
       (fg-accent "#084092")
