@@ -48,16 +48,16 @@
       (border "#888888")
 
       (bg-shadow-subtle "#f0f0f0")
-      (fg-shadow-subtle "#505050")
+      (fg-shadow-subtle "#404040")
 
       (bg-neutral "#d0d0d0")
-      (fg-neutral "#282828")
+      (fg-neutral "#303030")
 
       (bg-shadow-intense "#9ccfd8")
       (fg-shadow-intense "#000000")
 
       (bg-accent "#e6f3f5")
-      (fg-accent "#00ff00")
+      (fg-accent "#505050")
 
       (fg-red "#eb6f92")
       (fg-green "#3e8fb0")
