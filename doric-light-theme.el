@@ -48,7 +48,7 @@
       (border "#888888")
 
       (bg-shadow-subtle "#f0f0f0")
-      (fg-shadow-subtle "#404040")
+      (fg-shadow-subtle "#606060")
 
       (bg-neutral "#d0d0d0")
       (fg-neutral "#303030")
@@ -57,7 +57,7 @@
       (fg-shadow-intense "#000000")
 
       (bg-accent "#e6f3f5")
-      (fg-accent "#505050")
+      (fg-accent "#909090")
 
       (fg-red "#eb6f92")
       (fg-green "#3e8fb0")
