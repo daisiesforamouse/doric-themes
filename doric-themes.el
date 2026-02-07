@@ -1666,14 +1666,14 @@ default to a generic text that mentions the BACKGROUND-MODE."
                 ((default :background ,bg-shadow-intense :foreground ,fg-shadow-intense)
                  (((supports :box t))
                   :box ,border)
-                 (t :underline ,border)))
+                 (t :underline nil)))
 
               `(mode-line-active ((t :inherit mode-line)))
               `(mode-line-inactive
                 ((default :background ,bg-shadow-subtle :foreground ,fg-shadow-subtle)
                  (((supports :box t))
                   :box ,border)
-                 (t :underline ,border)))
+                 (t :underline ,nil)))
 
               `(notmuch-message-summary-face
                 ((default :background ,bg-shadow-subtle)
