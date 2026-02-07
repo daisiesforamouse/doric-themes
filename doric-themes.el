@@ -671,7 +671,6 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     escape-glyph
     eshell-ls-executable
     eshell-ls-special
-    font-latex-math-face
     font-latex-script-char-face
     gnus-server-agent
     gnus-server-cloud-host
@@ -872,6 +871,7 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     eshell-ls-missing
     eshell-ls-product
     eshell-prompt
+    font-latex-math-face
     font-latex-bold-face
     font-latex-sectioning-0-face
     font-latex-sectioning-1-face
