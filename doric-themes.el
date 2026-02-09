@@ -1397,13 +1397,19 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     ibuffer-deletion
     trashed-deleted))
 
-(defun doric-themes-prepare-faces (&rest faces-and-attributes)
-  "Set faces to their respective attributes in FACES-AND-ATTRIBUTES."
-  (pcase-let ((`(,faces . ,attributes) faces-and-attributes))
-    (mapcar
-     (lambda (face)
-       (backquote (list ',face (list (list t ,@attributes)))))
-     faces)))
+(defun doric-themes-prepare-faces (faces &rest attributes)
+  "Return face specs for FACES with ATTRIBUTES."
+  (mapcar (lambda (face)
+            `(,face ((t ,@attributes))))
+          faces))
+
+;; (defun doric-themes-prepare-faces (&rest faces-and-attributes)
+;;   "Set faces to their respective attributes in FACES-AND-ATTRIBUTES."
+;;   (pcase-let ((`(,faces . ,attributes) faces-and-attributes))
+;;     (mapcar
+;;      (lambda (face)
+;;        (backquote (list ',face (list (list t ,@attributes)))))
+;;      faces)))
 
 (defun doric-themes-adjust-value (hex-rgb percentage)
   "Adjust value of HEX-RGB colour by PERCENTAGE."
