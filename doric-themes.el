@@ -322,6 +322,10 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
 
 ;;;; Face customisations
 
+(defconst doric-themes-no-background-faces
+  '(gptel-context-highlight-face
+    menu))
+
 (defconst doric-themes-selection-faces
   '(completions-highlight
     consult-highlight-mark
@@ -440,7 +444,6 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     magit-blame-heading
     magit-blame-margin
     match
-    menu
     message-separator
     mu4e-region-code
     org-agenda-diary
@@ -1505,6 +1508,7 @@ default to a generic text that mentions the BACKGROUND-MODE."
               `(diff-hunk-header ((t :inherit bold :background ,bg-shadow-subtle)))
               `(diff-function ((t :background ,bg-shadow-subtle)))
 
+              ,@(doric-themes-prepare-faces doric-themes-no-background-faces :background 'unspecified)
               ,@(doric-themes-prepare-faces doric-themes-intense-shadow-faces :background 'bg-shadow-intense :foreground 'fg-shadow-intense)
               ,@(doric-themes-prepare-faces doric-themes-subtle-shadow-faces :background 'bg-shadow-subtle :foreground 'fg-shadow-subtle)
               ,@(doric-themes-prepare-faces doric-themes-intense-shadow-foreground-only-faces :foreground 'fg-shadow-intense)
