@@ -1666,18 +1666,32 @@ default to a generic text that mentions the BACKGROUND-MODE."
               '(markup-meta-face ((t :inherit fixed-pitch)))
               '(markup-replacement-face ((t :inherit fixed-pitch)))
 
+
               `(mode-line
-                ((default :background ,bg-main :foreground ,fg-main)
+                ((default :background ,bg-shadow-intense :foreground ,fg-shadow-intense)
                  (((supports :box t))
                   :box ,border)
-                 (t :underline ,border)))
+                 (t :underline ,nil)))
 
               `(mode-line-active ((t :inherit mode-line)))
               `(mode-line-inactive
-                ((default :background ,bg-main :foreground ,fg-accent)
+                ((default :background ,bg-shadow-subtle :foreground ,fg-shadow-subtle)
                  (((supports :box t))
                   :box ,border)
-                 (t :underline ,border)))
+                 (t :underline ,nil)))
+
+              ;; `(mode-line
+              ;;   ((default :background ,bg-main :foreground ,fg-main)
+              ;;    (((supports :box t))
+              ;;     :box ,border)
+              ;;    (t :underline ,border)))
+
+              ;; `(mode-line-active ((t :inherit mode-line)))
+              ;; `(mode-line-inactive
+              ;;   ((default :background ,bg-main :foreground ,fg-accent)
+              ;;    (((supports :box t))
+              ;;     :box ,border)
+              ;;    (t :underline ,border)))
 
               `(notmuch-message-summary-face
                 ((default :background ,bg-shadow-subtle)
