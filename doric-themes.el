@@ -1508,7 +1508,7 @@ default to a generic text that mentions the BACKGROUND-MODE."
               `(diff-hunk-header ((t :inherit bold :background ,bg-shadow-subtle)))
               `(diff-function ((t :background ,bg-shadow-subtle)))
 
-              ,@(doric-themes-prepare-faces doric-themes-no-background-faces :background unspecified)
+              ,@(doric-themes-prepare-faces doric-themes-no-background-faces :background 'unspecified)
               ,@(doric-themes-prepare-faces doric-themes-intense-shadow-faces :background 'bg-shadow-intense :foreground 'fg-shadow-intense)
               ,@(doric-themes-prepare-faces doric-themes-subtle-shadow-faces :background 'bg-shadow-subtle :foreground 'fg-shadow-subtle)
               ,@(doric-themes-prepare-faces doric-themes-intense-shadow-foreground-only-faces :foreground 'fg-shadow-intense)
