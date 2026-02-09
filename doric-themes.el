@@ -322,6 +322,9 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
 
 ;;;; Face customisations
 
+(defconst doric-themes-empty-background-faces
+  '(gptel-context-highlight-face))
+
 (defconst doric-themes-selection-faces
   '(completions-highlight
     consult-highlight-mark
@@ -747,7 +750,6 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     gnus-summary-normal-undownloaded
     gnus-summary-normal-unread
     gnus-summary-selected
-    gptel-context-highlight-face
     icomplete-vertical-selected-prefix-indicator-face
     ido-only-match
     icon
@@ -1506,6 +1508,7 @@ default to a generic text that mentions the BACKGROUND-MODE."
               `(diff-hunk-header ((t :inherit bold :background ,bg-shadow-subtle)))
               `(diff-function ((t :background ,bg-shadow-subtle)))
 
+              ,@(doric-themes-prepare-faces doric-themes-empty-background-faces :background ''unspecified)
               ,@(doric-themes-prepare-faces doric-themes-intense-shadow-faces :background 'bg-shadow-intense :foreground 'fg-shadow-intense)
               ,@(doric-themes-prepare-faces doric-themes-subtle-shadow-faces :background 'bg-shadow-subtle :foreground 'fg-shadow-subtle)
               ,@(doric-themes-prepare-faces doric-themes-intense-shadow-foreground-only-faces :foreground 'fg-shadow-intense)
