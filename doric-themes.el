@@ -436,7 +436,6 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     eww-form-textarea
     eww-form-text
     git-gutter:separator
-    header-line
     magit-blame-heading
     magit-blame-margin
     match
@@ -545,6 +544,7 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     gnus-summary-low-read
     gnus-summary-normal-ancient
     gnus-summary-normal-read
+    header-line
     hexl-ascii-region
     icomplete-vertical-unselected-prefix-indicator-face
     line-number
@@ -574,6 +574,7 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     marginalia-type
     marginalia-value
     marginalia-version
+    menu
     message-header-newsgroups
     message-header-xheader
     mu4e-header-face
@@ -642,8 +643,11 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     proced-mem
     shadow
     so-long-mode-line-inactive
+    tab-bar
     tab-bar-tab-group-inactive
     tab-bar-tab-ungrouped
+    tab-line
+    tool-bar
     transient-inactive-argument
     transient-inactive-value
     transient-unreachable
@@ -776,7 +780,6 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     marginalia-archive
     marginalia-char
     marginalia-file-owner
-    menu
     message-signature-separator
     minibuffer-depth-indicator
     mm-command-output
@@ -807,9 +810,6 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     shortdoc-section
     speedbar-file-face
     tabulated-list-fake-header
-    tab-bar
-    tab-line
-    tool-bar
     vc-dir-directory
     vc-dir-file
     vc-dir-header-value
