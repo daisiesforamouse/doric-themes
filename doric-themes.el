@@ -322,10 +322,6 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
 
 ;;;; Face customisations
 
-(defconst doric-themes-no-background-faces
-  '(gptel-context-highlight-face
-    menu))
-
 (defconst doric-themes-selection-faces
   '(completions-highlight
     consult-highlight-mark
@@ -750,6 +746,7 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     gnus-summary-normal-undownloaded
     gnus-summary-normal-unread
     gnus-summary-selected
+    gptel-context-highlight-face
     icomplete-vertical-selected-prefix-indicator-face
     ido-only-match
     icon
@@ -782,6 +779,7 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     marginalia-archive
     marginalia-char
     marginalia-file-owner
+    menu
     message-signature-separator
     minibuffer-depth-indicator
     mm-command-output
@@ -1397,19 +1395,13 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     ibuffer-deletion
     trashed-deleted))
 
-(defun doric-themes-prepare-faces (faces &rest attributes)
-  "Return face specs for FACES with ATTRIBUTES."
-  (mapcar (lambda (face)
-            `(,face ((t ,@attributes))))
-          faces))
-
-;; (defun doric-themes-prepare-faces (&rest faces-and-attributes)
-;;   "Set faces to their respective attributes in FACES-AND-ATTRIBUTES."
-;;   (pcase-let ((`(,faces . ,attributes) faces-and-attributes))
-;;     (mapcar
-;;      (lambda (face)
-;;        (backquote (list ',face (list (list t ,@attributes)))))
-;;      faces)))
+(defun doric-themes-prepare-faces (&rest faces-and-attributes)
+  "Set faces to their respective attributes in FACES-AND-ATTRIBUTES."
+  (pcase-let ((`(,faces . ,attributes) faces-and-attributes))
+    (mapcar
+     (lambda (face)
+       (backquote (list ',face (list (list t ,@attributes)))))
+     faces)))
 
 (defun doric-themes-adjust-value (hex-rgb percentage)
   "Adjust value of HEX-RGB colour by PERCENTAGE."
@@ -1514,7 +1506,6 @@ default to a generic text that mentions the BACKGROUND-MODE."
               `(diff-hunk-header ((t :inherit bold :background ,bg-shadow-subtle)))
               `(diff-function ((t :background ,bg-shadow-subtle)))
 
-              ,@(doric-themes-prepare-faces doric-themes-no-background-faces :background 'unspecified)
               ,@(doric-themes-prepare-faces doric-themes-intense-shadow-faces :background 'bg-shadow-intense :foreground 'fg-shadow-intense)
               ,@(doric-themes-prepare-faces doric-themes-subtle-shadow-faces :background 'bg-shadow-subtle :foreground 'fg-shadow-subtle)
               ,@(doric-themes-prepare-faces doric-themes-intense-shadow-foreground-only-faces :foreground 'fg-shadow-intense)
