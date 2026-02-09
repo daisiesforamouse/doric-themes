@@ -447,10 +447,7 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     org-clock-overlay
     secondary-selection
     show-paren-match-expression
-    tab-bar
-    tab-line
     transient-disabled-suffix
-    tool-bar
     vc-dir-status-ignored
     widget-documentation
     widget-field
@@ -810,6 +807,9 @@ Run `doric-themes-after-load-theme-hook' after loading a theme."
     shortdoc-section
     speedbar-file-face
     tabulated-list-fake-header
+    tab-bar
+    tab-line
+    tool-bar
     vc-dir-directory
     vc-dir-file
     vc-dir-header-value
